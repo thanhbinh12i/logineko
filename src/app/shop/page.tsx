@@ -12,6 +12,8 @@ import { Badge } from "@/components/ui/badge";
 import { Footer } from "@/components/footer";
 import { ShoppingCart, Star, Download, BookOpen, Crown } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
+import { useState } from "react";
+import Link from "next/link";
 
 const products = [
   {
@@ -110,6 +112,7 @@ const categories = [
 
 export default function ShopPage() {
   const { addItem } = useCart();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-cyan-50">
@@ -213,20 +216,12 @@ export default function ShopPage() {
                     </div>
 
                     <div className="flex flex-col space-y-2">
-                      <Button
-                        className="cursor-pointer w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-playful font-semibold shadow-playful transition-all duration-300"
-                        onClick={() =>
-                          addItem({
-                            id: product.id,
-                            name: product.name,
-                            price: product.price,
-                            image: product.image,
-                          })
-                        }
-                      >
-                        <ShoppingCart className="w-4 h-4 mr-2" />
-                        Thêm Vào Giỏ
-                      </Button>
+                      <Link href="/payment">
+                        <Button className="cursor-pointer w-full bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-playful font-semibold shadow-playful transition-all duration-300">
+                          <ShoppingCart className="w-4 h-4 mr-2" />
+                          Mua ngay
+                        </Button>
+                      </Link>
 
                       {product.category === "Bài Tập" ||
                       product.category === "Bộ Học Số" ? (
