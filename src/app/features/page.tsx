@@ -123,35 +123,35 @@ const learningAreas = [
     icon: Brain,
     title: "Phát Triển Tư Duy",
     description: "Trí nhớ, chú ý, giải quyết vấn đề và tư duy phản biện",
-    age: "3-8 tuổi",
+    age: "5-10 tuổi",
     activities: 45,
   },
   {
     icon: BookOpen,
     title: "Ngôn Ngữ & Tập Đọc Viết",
     description: "Đọc hiểu, viết chữ, học từ vựng và giao tiếp",
-    age: "3-8 tuổi",
+    age: "5-10 tuổi",
     activities: 60,
   },
   {
     icon: Zap,
     title: "Kiến Thức STEM",
     description: "Toán học, khoa học, công nghệ và kỹ thuật",
-    age: "4-8 tuổi",
+    age: "5-10 tuổi",
     activities: 38,
   },
   {
     icon: Palette,
     title: "Nghệ Thuật Sáng Tạo",
     description: "Vẽ tranh, tô màu, âm nhạc và biểu đạt sáng tạo",
-    age: "3-8 tuổi",
+    age: "5-10 tuổi",
     activities: 25,
   },
   {
     icon: Heart,
     title: "Kỹ Năng Xã Hội & Cảm Xúc",
     description: "Đồng cảm, hiểu cảm xúc, kỹ năng xã hội và nhận thức bản thân",
-    age: "3-8 tuổi",
+    age: "5-10 tuổi",
     activities: 20,
   },
 ];
@@ -205,7 +205,7 @@ export default function FeaturesPage() {
               Khám phá bộ tính năng giáo dục toàn diện của LogiNeko được thiết
               kế bởi các chuyên gia phát triển trẻ em. Cùng Neko - chú mèo đáng
               yêu trong những cuộc phiêu lưu học tập vui vẻ, an toàn và hiệu quả
-              dành cho trẻ em từ 3-8 tuổi.
+              dành cho trẻ em từ 5-10 tuổi.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

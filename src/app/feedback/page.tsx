@@ -441,7 +441,6 @@ export default function FeedbackPage() {
         <div className="text-center">
           <Button
             onClick={handleSubmit}
-            disabled={isSubmitting || !isFormValid}
             className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white rounded-playful px-12 py-4 text-lg font-semibold shadow-playful transition-all duration-300 disabled:opacity-50"
           >
             {isSubmitting ? (

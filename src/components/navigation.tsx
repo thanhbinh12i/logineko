@@ -11,11 +11,20 @@ import {
   User,
   LogOut,
   Settings,
+  Smile,
 } from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 import { useAuth } from "@/contexts/AuthContext";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 
 export function Navigation() {
+  const [open, setOpen] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const { state } = useCart();
@@ -150,10 +159,31 @@ export function Navigation() {
               </Link>
             )} */}
 
-            <Button className="bg-gradient-primary hover:opacity-90 text-black rounded-playful px-6 py-2 font-semibold shadow-playful">
+            <Button
+              onClick={() => setOpen(true)}
+              className="bg-gradient-primary hover:opacity-90 text-black rounded-playful px-6 py-2 font-semibold shadow-playful"
+            >
               <Download className="w-4 h-4 mr-2" />
               Tải ứng dụng
             </Button>
+
+            <Dialog open={open} onOpenChange={setOpen}>
+              <DialogContent className="max-w-lg text-center border-none rounded-2xl bg-white shadow-2xl px-6 py-8">
+                <DialogHeader>
+                  <div className="flex justify-center mb-4">
+                    <Smile className="w-12 h-12 text-yellow-500 animate-bounce" />
+                  </div>
+                  <DialogTitle className="text-xl text-center font-bold text-pink-600">
+                    Sắp ra mắt!
+                  </DialogTitle>
+                  <DialogDescription className="text-gray-700 text-base mt-2">
+                    Ứng dụng sẽ được phát hành trong thời gian tới.
+                    <br />
+                    Cảm ơn bạn đã quan tâm! 💖
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           </div>
 
           {/* Nút menu trên di động */}

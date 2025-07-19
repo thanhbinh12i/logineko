@@ -13,7 +13,7 @@ export function Footer() {
               <span className="text-2xl font-bold">LogiNeko</span>
             </div>
             <p className="text-gray-400">
-              Biến việc học trở nên vui nhộn và dễ tiếp cận cho trẻ từ 3–10 tuổi
+              Biến việc học trở nên vui nhộn và dễ tiếp cận cho trẻ từ 5–10 tuổi
               trên toàn thế giới cùng mèo Neko.
             </p>
           </div>

@@ -51,7 +51,7 @@ export default function Home() {
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Cùng Neko, người bạn mèo đáng yêu của bé, khám phá những cuộc
-                  phiêu lưu học tập thú vị! Hoàn hảo cho trẻ em từ 3-8 tuổi với
+                  phiêu lưu học tập thú vị! Hoàn hảo cho trẻ em từ 5-10 tuổi với
                   những câu chuyện tương tác, trò chơi vui nhộn và hoạt động hấp
                   dẫn.
                 </p>
@@ -106,7 +106,7 @@ export default function Home() {
                     Ứng dụng LogiNeko
                   </h3>
                   <p className="text-gray-600 relative z-10 group-hover:text-gray-700 transition-colors duration-300">
-                    Học tập tương tác cho trẻ 3-8 tuổi
+                    Học tập tương tác cho trẻ 5-10 tuổi
                   </p>
                   <div className="grid grid-cols-3 gap-4 relative z-10">
                     <div className="text-center transform group-hover:scale-110 transition-transform duration-300">
@@ -317,7 +317,7 @@ export default function Home() {
                       Minh T.
                     </p>
                     <p className="text-sm text-gray-500">
-                      Bố của hai bé sinh đôi, 4 tuổi
+                      Bố của hai bé sinh đôi, 8 tuổi
                     </p>
                   </div>
                 </div>
